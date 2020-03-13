@@ -1,0 +1,55 @@
+2020-03-13 16:58:22.160  INFO 10828 --- [restartedMain] com.renjian.blog.BlogApplication         : Starting BlogApplication on SD-20190816DGFR with PID 10828 (E:\IdeaProject\blog\target\classes started by Administrator in E:\IdeaProject\blog)
+2020-03-13 16:58:22.190  INFO 10828 --- [restartedMain] com.renjian.blog.BlogApplication         : The following profiles are active: pro
+2020-03-13 16:58:32.999  WARN 10828 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-13 16:58:33.254  WARN 10828 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-03-13 16:58:34.293  INFO 10828 --- [restartedMain] com.renjian.blog.BlogApplication         : Started BlogApplication in 13.946 seconds (JVM running for 24.114)
+2020-03-13 16:58:50.207  INFO 10828 --- [http-nio-8080-exec-1] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/', ip='127.0.0.1', classMethod='com.renjian.blog.web.IndexController.index', args=[Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2020-03-13 16:58:51.010  WARN 10828 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-03-13 16:58:51.085  WARN 10828 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-03-13 16:58:51.257  INFO 10828 --- [http-nio-8080-exec-1] com.renjian.blog.aspect.LogAspect        : Result : index
+2020-03-13 16:58:56.385  INFO 10828 --- [http-nio-8080-exec-7] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/footer/newblog', ip='127.0.0.1', classMethod='com.renjian.blog.web.IndexController.newblogs', args=[{}]}
+2020-03-13 16:58:56.662  INFO 10828 --- [http-nio-8080-exec-7] com.renjian.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2020-03-13 16:58:59.461  INFO 10828 --- [http-nio-8080-exec-10] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/blog/14', ip='127.0.0.1', classMethod='com.renjian.blog.web.IndexController.blog', args=[14, {}]}
+2020-03-13 16:58:59.817  INFO 10828 --- [http-nio-8080-exec-10] com.renjian.blog.aspect.LogAspect        : Result : blog
+2020-03-13 16:59:03.924  INFO 10828 --- [http-nio-8080-exec-6] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/footer/newblog', ip='127.0.0.1', classMethod='com.renjian.blog.web.IndexController.newblogs', args=[{}]}
+2020-03-13 16:59:04.210  INFO 10828 --- [http-nio-8080-exec-6] com.renjian.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2020-03-13 16:59:04.355  INFO 10828 --- [http-nio-8080-exec-8] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/comments/14', ip='127.0.0.1', classMethod='com.renjian.blog.web.CommentController.comments', args=[14, {}]}
+2020-03-13 16:59:05.614  INFO 10828 --- [http-nio-8080-exec-8] com.renjian.blog.aspect.LogAspect        : Result : blog :: commentList
+2020-03-13 16:59:35.088  INFO 10828 --- [http-nio-8080-exec-10] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/comments', ip='127.0.0.1', classMethod='com.renjian.blog.web.CommentController.post', args=[Comment{id=null, nickname='任建', email='2456259409@qq.com', content='
+你好，测试中', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@106639ef]}
+2020-03-13 16:59:35.090  INFO 10828 --- [http-nio-8080-exec-10] com.renjian.blog.aspect.LogAspect        : Result : redirect:/comments/14
+2020-03-13 16:59:36.421  INFO 10828 --- [http-nio-8080-exec-9] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/comments/14;jsessionid=18FBAAE25A256CC0586A38DB5970670C', ip='127.0.0.1', classMethod='com.renjian.blog.web.CommentController.comments', args=[14, {}]}
+2020-03-13 16:59:41.314  INFO 10828 --- [http-nio-8080-exec-9] com.renjian.blog.aspect.LogAspect        : Result : blog :: commentList
+2020-03-13 16:59:52.581  INFO 10828 --- [http-nio-8080-exec-2] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/blog/14', ip='127.0.0.1', classMethod='com.renjian.blog.web.IndexController.blog', args=[14, {}]}
+2020-03-13 16:59:52.801  INFO 10828 --- [http-nio-8080-exec-2] com.renjian.blog.aspect.LogAspect        : Result : blog
+2020-03-13 16:59:56.836  INFO 10828 --- [http-nio-8080-exec-6] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/footer/newblog', ip='127.0.0.1', classMethod='com.renjian.blog.web.IndexController.newblogs', args=[{}]}
+2020-03-13 16:59:57.001  INFO 10828 --- [http-nio-8080-exec-7] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/comments/14', ip='127.0.0.1', classMethod='com.renjian.blog.web.CommentController.comments', args=[14, {}]}
+2020-03-13 16:59:57.364  INFO 10828 --- [http-nio-8080-exec-6] com.renjian.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2020-03-13 16:59:59.546  INFO 10828 --- [http-nio-8080-exec-7] com.renjian.blog.aspect.LogAspect        : Result : blog :: commentList
+2020-03-13 17:03:00.175 DEBUG 4720 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2020-03-13 17:03:00.606  INFO 4720 --- [restartedMain] com.renjian.blog.BlogApplication         : Starting BlogApplication on SD-20190816DGFR with PID 4720 (E:\IdeaProject\blog\target\classes started by Administrator in E:\IdeaProject\blog)
+2020-03-13 17:03:00.608  INFO 4720 --- [restartedMain] com.renjian.blog.BlogApplication         : The following profiles are active: pro
+2020-03-13 17:03:11.620  WARN 4720 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-13 17:03:11.867  WARN 4720 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-03-13 17:03:12.819  INFO 4720 --- [restartedMain] com.renjian.blog.BlogApplication         : Started BlogApplication in 13.966 seconds (JVM running for 17.44)
+2020-03-13 17:03:18.532  INFO 4720 --- [http-nio-8080-exec-1] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/blog/14', ip='127.0.0.1', classMethod='com.renjian.blog.web.IndexController.blog', args=[14, {}]}
+2020-03-13 17:03:19.928  INFO 4720 --- [http-nio-8080-exec-1] com.renjian.blog.aspect.LogAspect        : Result : blog
+2020-03-13 17:03:26.125  INFO 4720 --- [http-nio-8080-exec-2] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/footer/newblog', ip='127.0.0.1', classMethod='com.renjian.blog.web.IndexController.newblogs', args=[{}]}
+2020-03-13 17:03:26.443  INFO 4720 --- [http-nio-8080-exec-2] com.renjian.blog.aspect.LogAspect        : Result : _fragments :: newblogList
+2020-03-13 17:03:26.472  INFO 4720 --- [http-nio-8080-exec-3] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/comments/14', ip='127.0.0.1', classMethod='com.renjian.blog.web.CommentController.comments', args=[14, {}]}
+2020-03-13 17:03:27.637  INFO 4720 --- [http-nio-8080-exec-3] com.renjian.blog.aspect.LogAspect        : Result : blog :: commentList
+2020-03-13 17:04:01.048  INFO 4720 --- [http-nio-8080-exec-5] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/comments', ip='127.0.0.1', classMethod='com.renjian.blog.web.CommentController.post', args=[Comment{id=null, nickname='任建', email='2456259409@qq.com', content='
+我是菜鸟', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@24ca4ad7]}
+2020-03-13 17:04:01.050  INFO 4720 --- [http-nio-8080-exec-5] com.renjian.blog.aspect.LogAspect        : Result : redirect:/comments/14
+2020-03-13 17:04:01.211  INFO 4720 --- [http-nio-8080-exec-7] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/comments/14', ip='127.0.0.1', classMethod='com.renjian.blog.web.CommentController.comments', args=[14, {}]}
+2020-03-13 17:04:03.114  INFO 4720 --- [http-nio-8080-exec-7] com.renjian.blog.aspect.LogAspect        : Result : blog :: commentList
+2020-03-13 17:04:54.912  INFO 4720 --- [http-nio-8080-exec-4] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/comments', ip='127.0.0.1', classMethod='com.renjian.blog.web.CommentController.post', args=[Comment{id=null, nickname='任建', email='2456259409@qq.com', content='大家一起菜
+', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@24ca4ad7]}
+2020-03-13 17:04:54.913  INFO 4720 --- [http-nio-8080-exec-4] com.renjian.blog.aspect.LogAspect        : Result : redirect:/comments/14
+2020-03-13 17:04:55.113  INFO 4720 --- [http-nio-8080-exec-6] com.renjian.blog.aspect.LogAspect        : Request : {url='http://mq8u6m.natappfree.cc/comments/14', ip='127.0.0.1', classMethod='com.renjian.blog.web.CommentController.comments', args=[14, {}]}
+2020-03-13 17:04:58.606  INFO 4720 --- [http-nio-8080-exec-6] com.renjian.blog.aspect.LogAspect        : Result : blog :: commentList
+2020-03-13 17:07:49.016  INFO 11460 --- [main] com.renjian.blog.BlogApplicationTests    : Starting BlogApplicationTests on SD-20190816DGFR with PID 11460 (started by Administrator in E:\IdeaProject\blog)
+2020-03-13 17:07:49.024  INFO 11460 --- [main] com.renjian.blog.BlogApplicationTests    : The following profiles are active: pro
+2020-03-13 17:08:31.757  WARN 11460 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-13 17:08:35.801  WARN 11460 --- [main] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][main] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-03-13 17:08:45.205  INFO 11460 --- [main] com.renjian.blog.BlogApplicationTests    : Started BlogApplicationTests in 58.077 seconds (JVM running for 63.967)

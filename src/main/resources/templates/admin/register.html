@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/_fragments :: head(${'用户注册'})" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+<body>
+    <div class="m-padded-tb-massive m-container-small" style="max-width: 30em !important;">
+        <div class="ui container">
+            <div class="ui middle aligned center aligned grid">
+                <div class="column">
+                    <h2 class="ui teal image header">
+                        <div class="content">
+                            用户注册
+                        </div>
+                    </h2>
+                    <form class="ui large form" method="post" action="/admin/login" th:action="@{/user/submitregister}">
+                        <div class="ui  segment">
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="user icon"></i>
+                                    <input type="text" name="username" placeholder="用户名">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="unhide  icon"></i>
+                                    <input type="text" name="nickname" placeholder="昵称">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="lock icon"></i>
+                                    <input type="password" name="password" placeholder="密码">
+                                </div>
+                            </div>
+                            <!--///////////////////-->
+
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="mail icon"></i>
+                                    <input type="text" name="email" placeholder="邮箱">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui left icon input">
+                                    <i class="browser icon"></i>
+                                    <input type="text" name="avatar" placeholder="头像图片地址">
+                                </div>
+                            </div>
+                            <button class="ui fluid large teal submit button" type="submit">提交</button>
+                        </div>
+
+                        <div class="ui error mini message"></div>
+                        <div class="ui message negative mini" th:unless="${#strings.isEmpty(message)}" th:text="${message}">用户名或密码错误</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/*/<th:block th:replace="admin/_fragments :: script">/*/-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <!--/*/</th:block>/*/-->
+
+    <script>
+        $(function () {
+            $('.ui.form').form({
+                fields : {
+                    username : {
+                        identifier : 'username',
+                        rules : [{
+                            type : 'empty',
+                            prompt : '请输入用户名'
+                        }]
+                    },
+                    password : {
+                        identifier : 'password',
+                        rules : [{
+                            type : 'empty',
+                            prompt : '请输入密码'
+                        }]
+                    },
+                    nickname : {
+                        identifier : 'nickname',
+                        rules : [{
+                            type : 'empty',
+                            prompt : '请输入昵称'
+                        }]
+                    },
+                    email : {
+                        identifier : 'email',
+                        rules : [{
+                            type : 'empty',
+                            prompt : '请输入邮箱'
+                        }]
+                    },
+                    avatar : {
+                        identifier : 'avatar',
+                        rules : [{
+                            type : 'empty',
+                            prompt : '请输入头像地址'
+                        }]
+                    }
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
